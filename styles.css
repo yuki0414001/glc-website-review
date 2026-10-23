@@ -181,3 +181,5 @@ dialog{border-radius:16px;border-top:5px solid var(--orange)}
 }
 
 @media(min-width:1001px){.home-hero .hero-copy h1{margin-top:22px}.home-hero .hero-slogan{margin-top:22px}}
+
+.application-entry{margin-top:32px}
