@@ -25,7 +25,7 @@ export const highlights = [
 export const programs = [
   {id:'daily',n:'01',title:'日常活动',en:'Daily Activities',cadence:'',desc:'各高校分部可结合成员兴趣、校历安排及场地资源，每月自主选择1—2类活动开展。',items:[
     ['薄肌训练日','Lean Training Day','力量训练、跑步及趣味运动'],
-    ['成长读书会','Growth Reading Club','阅读、认知与观点交流'],
+    ['成长读书会','Growth Reading Club','阅读、知识与观点交流'],
     ['大水生活课堂','Healthy Living Session','科学补水、饮食与生活习惯交流'],
     ['AI探索日','AI Exploration Day','AI学习、工具体验与创新实践'],
     ['青年交流沙龙','Youth Exchange Salon','跨校交流、职业发展与青年成长']
