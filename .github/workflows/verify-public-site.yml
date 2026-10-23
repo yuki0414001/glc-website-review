@@ -17,14 +17,14 @@ jobs:
 
           base = "https://global-lean-club.vercel.app/"
           expected = {
-              "index.html": "b9865952c37d307025886c795f459ed059a133b321e04625a149a74dac92fd22",
+              "index.html": "fd8cca9fff865e3de39548d0e1307e3f782e48e0c5d0e3e768b2c933cb06c56b",
               "app.js": "1e462f09e4096f4c5ad67612b8405fbe33655938fc05ed200eb17dca28021a3f",
               "content.js": "9c7d2367ae1afa1b9426f010ad7d7f353dae598e2be4cb57bd1e26a93538c194",
-              "styles.css": "05d2e5a685fa226cf908e8637a67e9ac1c59b7f0ad74ad9d967ebd4c2d990917",
+              "styles.css": "50d833da2725dca709f652a2a7628d353ac81fcde76bd1c14b080ae0552e75dd",
               "assets/campus.png": "c0725175f855bbe8200ca8ef714abb645e04209900a7972fea218ee2abdd1781",
               "assets/workshop.png": "222b7271b56484e80c7abe49143e437819a5625a16b5b3b30d3d960de3591902",
               "assets/community.png": "a767946d1d24250d70cbb67dc5349c11b00afe47cf046ce862224b326a05bdd4",
-              "assets/favicon.svg": "245693046ad221449c24cc216e93bda0cfe6571fc6eaad99282ef9652cb269c6",
+              "assets/favicon.svg": "0cc3d7dc9281a2e17d6896f5de14837e9527848df99489b36dc3da1e646fc2c5",
           }
           passed = True
           for path, digest in expected.items():
