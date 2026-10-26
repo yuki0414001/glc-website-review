@@ -21,8 +21,8 @@
 
 /* Official GLC identity: #002c71 blue, #fe7b10 orange. */
 .brand .wordmark,.footer-brand .wordmark{
-  display:block;flex:none;width:50px;height:64px;font-size:0;line-height:0;
-  background:url("assets/favicon.svg?v=20261023-2") center/contain no-repeat;
+  display:block;flex:none;width:64px;height:64px;font-size:0;line-height:0;
+  background:url("assets/favicon.svg?v=20261026-logo") center/contain no-repeat;
 }
 .brand .brand-star{display:none}
 .brand-caption{font-size:10px;font-weight:600;letter-spacing:.04em;border-color:var(--line)}
@@ -139,7 +139,7 @@
 .document-placeholder{border-radius:8px}
 .document-status>i{background:var(--orange)}
 #footer{background:var(--blue);border-top:5px solid var(--orange)}
-.footer-brand .wordmark{width:84px;height:108px}
+.footer-brand .wordmark{width:108px;height:108px}
 .footer-group h3{color:var(--orange);font-weight:600}
 .footer-brand>span,.footer-bottom{color:#ffffffb8}
 #review-bar{background:#ffffffed;border-top:2px solid var(--blue)}
@@ -154,13 +154,13 @@ dialog{border-radius:16px;border-top:5px solid var(--orange)}
   .brand-caption{font-size:9px}
 }
 @media(max-width:850px){
-  .brand .wordmark{width:44px;height:57px}
+  .brand .wordmark{width:57px;height:57px}
   #header{height:84px}
   .support-grid article{padding:22px}
 }
 @media(max-width:600px){
   #header{height:78px}
-  .brand .wordmark{width:43px;height:55px}
+  .brand .wordmark{width:55px;height:55px}
   .home-hero.page-wrap{padding:33px 20px 32px;gap:32px}
   .hero-image{width:calc(100% - 12px);padding:0;height:410px;margin-left:12px}
   .hero-image .photo{border-radius:110px 8px 8px 8px;min-height:0}
@@ -175,7 +175,7 @@ dialog{border-radius:16px;border-top:5px solid var(--orange)}
   .support-grid article{padding:21px 15px}
   .support-grid h3{font-size:17px}
   .cert-visual>.photo{border-radius:80px 9px 9px 9px}
-  .footer-brand .wordmark{width:70px;height:89px}
+  .footer-brand .wordmark{width:89px;height:89px}
   .page-heading{margin-bottom:18px}
   .brand-ribbon{padding-block:15px;border-bottom-width:3px}
 }
