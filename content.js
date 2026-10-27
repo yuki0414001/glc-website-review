@@ -3,14 +3,14 @@ export const nav = [
   ['chapters','全球社群','Global Chapters'], ['programs','活动体系','GLC Programs']
 ];
 export const auxiliary = [
-  ['faq','常见问题','FAQ','了解与帮助'], ['contact','联系我们','Contact','了解与帮助'],
-  ['charter','GLC章程','Charter','规则与治理'],
-  ['certification-policy','GLC全球高校分部认证与管理办法','Chapter Certification & Management Policy','规则与治理'],
+  ['faq','常见问题（FAQ）','FAQ','了解与帮助'], ['contact','联系我们','Contact','了解与帮助'],
+  ['charter','GLC组织章程','Charter','规则与治理'],
+  ['certification-policy','GLC高校分部认证与管理办法','Chapter Certification & Management Policy','规则与治理'],
   ['support-policy','GLC分部活动与物资支持管理办法','Chapter Activities & Support Policy','规则与治理'],
   ['conduct','社群行为准则','Code of Conduct','规则与治理'],
-  ['brand','品牌规范','Brand Guidelines','规则与治理'],
-  ['privacy','隐私政策','Privacy Policy','法律与隐私'],
-  ['terms','网站使用条款','Terms of Use','法律与隐私']
+  ['brand','GLC高校分部品牌使用规范','Brand Guidelines','规则与治理'],
+  ['privacy','隐私政策（Privacy Policy）','Privacy Policy','法律与隐私'],
+  ['terms','网站使用条款（Term of Use）','Term of Use','法律与隐私']
 ];
 export const chapters = [
   {id:'campus-a',name:'高校名称 / GLC分部名称',en:'Chapter Page',location:'城市、国家',image:'campus'},
@@ -57,5 +57,5 @@ export const reviewNotes = {
  about:{pages:'Word · 第二页 关于GLC',sections:['我们是谁 · 三组交错图文','我们走向哪里 · 愿景视觉区'],notes:['保留原文完整段落；About正文无CTA。','图像为AI生成视觉示意。']},
  chapters:{pages:'Word · 第三页 全球社群',sections:['全球校园网络首屏','高校分部 · 可点击详情','社群动态 · 杂志式图片流'],notes:['分部资料不编写；动态仅使用Word中明确列出的2条示例，均非真实认证名单或事件。','国家、城市、高校筛选按文档留待分部增加后再加入。','正式发布日期、官方联系方式与真实活动素材待提供。']},
  programs:{pages:'Word · 第四页 活动体系',sections:['日常活动 · 五类活动','全球主题月 · 11月 / 12月 / 1月','全球薄肌峰会 · 年度旗舰活动'],notes:['三个活动体系入口默认收起，点击展开。','主题月份按原文展示，未补充未经确认的年份和日程。','峰会保留“计划每年举办一届”的表达。']},
- certification:{pages:'Word · 第五页 高校分部认证',sections:['认证首屏','申请前确认 · 四条件','认证后支持 · 四模块','认证流程 · 五步骤','Google表单申请入口'],notes:['按用户最新要求，移除站内五步填写界面，申请入口在新标签页打开指定Google表单。','联系邮箱保留Word原文“xx”，并单独标注审核状态；制度与隐私全文待提供。']}
+ certification:{pages:'Word · 第五页 高校分部认证',sections:['认证首屏','申请前确认 · 四条件','认证后支持 · 四模块','认证流程 · 五步骤','Google表单申请入口'],notes:['按用户最新要求，移除站内五步填写界面，申请入口在新标签页打开指定Google表单。','联系邮箱采用用户提供的contact@globalleanclub.org；制度与隐私全文待提供。']}
 };

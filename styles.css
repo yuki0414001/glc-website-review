@@ -183,3 +183,27 @@ dialog{border-radius:16px;border-top:5px solid var(--orange)}
 @media(min-width:1001px){.home-hero .hero-copy h1{margin-top:22px}.home-hero .hero-slogan{margin-top:22px}}
 
 .application-entry{margin-top:32px}
+
+/* Footer structure supplied by the user, 2026-10-27. */
+#footer{padding:64px 56px 26px}
+#footer .footer-top{grid-template-columns:minmax(0,1fr) minmax(0,1.05fr) minmax(0,1.45fr);gap:48px;align-items:start}
+#footer .footer-brand{grid-column:auto;grid-row:auto;padding:0;border:0}
+#footer .footer-group{grid-column:auto;grid-row:auto}
+#footer .footer-group h3{font-size:14px;margin:8px 0 22px}
+#footer .footer-group a{font-size:13px;line-height:1.8;margin:14px 0;overflow-wrap:anywhere}
+.footer-socials{display:flex;flex-wrap:wrap;gap:10px;margin-top:22px}
+.footer-social-icon{display:grid;place-items:center;width:36px;height:36px;border:1px solid #ffffff40;border-radius:50%;color:var(--white)}
+.footer-social-icon svg{display:block;width:21px;height:21px;fill:currentColor}
+#footer .footer-contact{display:grid;gap:8px;margin-top:18px}
+#footer .footer-contact a{margin:0}
+#footer .footer-email{width:fit-content}
+#footer .footer-bottom{display:flex;align-items:flex-end;justify-content:space-between;flex-wrap:nowrap;gap:32px;margin-top:48px;padding-top:24px}
+.footer-meta{display:flex;align-items:center;flex-wrap:wrap;gap:10px 18px;font-size:10px;line-height:1.8}
+#footer .footer-bottom a{margin-left:0;letter-spacing:0}
+.footer-meta>a{font-size:9px}
+.footer-legal{display:flex;justify-content:flex-end;flex-wrap:wrap;gap:12px 24px;margin-left:auto}
+.footer-legal a{font-size:11px;line-height:1.8;white-space:nowrap}
+.contact-email>strong{font-size:clamp(14px,2.1vw,28px);overflow-wrap:anywhere}
+.contact-email a:hover{text-decoration:underline;text-underline-offset:4px}
+@media(max-width:900px){#footer{padding-inline:32px}#footer .footer-top{gap:28px}.footer-socials{gap:8px}.footer-social-icon{width:32px;height:32px}#footer .footer-bottom{gap:24px}}
+@media(max-width:600px){#footer{padding:48px 20px 24px}#footer .footer-top{grid-template-columns:1fr;gap:32px}#footer .footer-group h3{margin:0 0 16px}#footer .footer-group a{font-size:13px;margin:12px 0}.footer-socials{margin-top:18px;gap:10px}.footer-social-icon{width:36px;height:36px}#footer .footer-contact{margin-top:16px}#footer .footer-contact a{margin:0}#footer .footer-bottom{flex-direction:column;align-items:stretch;margin-top:32px;gap:22px}.footer-meta{font-size:9px;gap:8px 14px}.footer-legal{align-self:flex-end;gap:10px 18px}.footer-legal a{font-size:10px}}
