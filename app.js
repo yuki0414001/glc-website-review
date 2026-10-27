@@ -1,4 +1,4 @@
-import {nav,auxiliary,chapters,highlights,programs,conditions,supports,process,reviewNotes} from './content.js?v=20261027-footer';
+import {nav,auxiliary,chapters,highlights,programs,conditions,supports,process,reviewNotes} from './content.js?v=20261027-legal-cn';
 
 const $ = s => document.querySelector(s);
 const esc = s => String(s ?? '').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));

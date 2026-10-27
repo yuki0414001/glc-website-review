@@ -9,8 +9,8 @@ export const auxiliary = [
   ['support-policy','GLC分部活动与物资支持管理办法','Chapter Activities & Support Policy','规则与治理'],
   ['conduct','社群行为准则','Code of Conduct','规则与治理'],
   ['brand','GLC高校分部品牌使用规范','Brand Guidelines','规则与治理'],
-  ['privacy','隐私政策（Privacy Policy）','Privacy Policy','法律与隐私'],
-  ['terms','网站使用条款（Term of Use）','Term of Use','法律与隐私']
+  ['privacy','隐私政策','','法律与隐私'],
+  ['terms','网站使用条款','','法律与隐私']
 ];
 export const chapters = [
   {id:'campus-a',name:'高校名称 / GLC分部名称',en:'Chapter Page',location:'城市、国家',image:'campus'},

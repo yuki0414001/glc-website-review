@@ -17,9 +17,9 @@ jobs:
 
           base = "https://global-lean-club.vercel.app/"
           expected = {
-              "index.html": "51ce4e636797936d036cbb4fa49f586576fffc66f3dbdba853cfb33da7892b86",
-              "app.js": "e866cf7c9d6e61a2ddbfdfdda8d9a16da2813f8ebad0c4223c101d79c8d30ccd",
-              "content.js": "ea9e56e0863403d44f0e5c6095a76b48bf9e496eaa9cf1b60f12609706e42f2d",
+              "index.html": "ade455ca1837cba6a927407072b689e83b666f2afe7e93ea24e895ca308c77dd",
+              "app.js": "1247ac3e2f3947758cde713a2ccf9a164fe1680df8954d1cc8629b0ace03f697",
+              "content.js": "2fe3968d5dff4f48d55b9e3be0ee9aef66ecca7317c9f1c25324449562f3b2a0",
               "styles.css": "6fba667fbff9f1cf6cef4a1f2b7878139407646e8c133a66848f19cab0ab0063",
               "assets/campus.png": "c0725175f855bbe8200ca8ef714abb645e04209900a7972fea218ee2abdd1781",
               "assets/workshop.png": "222b7271b56484e80c7abe49143e437819a5625a16b5b3b30d3d960de3591902",
