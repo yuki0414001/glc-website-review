@@ -214,10 +214,21 @@ dialog{border-radius:16px;border-top:5px solid var(--orange)}
 #footer .footer-language a[aria-current="page"]{color:var(--orange);text-decoration:underline;text-underline-offset:4px}
 @media(max-width:600px){html[lang="en"] .title-row h1{white-space:normal;min-width:0}}
 
-/* Compact chartering page uses the homepage four-step layout. */
-.cert-hero-compact{display:block;padding-block:52px 64px}
-.cert-hero-compact>div{max-width:1000px}
+/* Chartering keeps the homepage step style with more room to read. */
+.cert-hero-compact{display:block;min-height:calc(100svh - 94px);padding-block:72px 88px}
+.cert-hero-compact>div{width:100%}
 .cert-hero-compact h1{margin:0;font-size:clamp(30px,3.4vw,44px);line-height:1.45}
-.cert-hero-compact p{max-width:840px}
-.cert-hero-compact .mini-process{max-width:840px;margin-top:36px;border-color:var(--line)}
-@media(max-width:600px){.cert-hero-compact{padding-block:44px 60px}}
+.cert-hero-compact p{max-width:840px;font-size:16px;line-height:1.9;margin-block:24px 32px}
+.cert-hero-compact .mini-process{max-width:none;gap:48px;margin-top:64px;padding-top:40px;border-color:var(--line)}
+.cert-hero-compact .mini-process>span{font-size:18px;line-height:1.5;padding-block:8px 16px}
+.cert-hero-compact .mini-process b{font-size:76px;line-height:1;margin-bottom:24px}
+.cert-hero-compact .mini-process>span:not(:last-child):after{right:-30px;top:27px;font-size:28px}
+@media(max-width:600px){
+  .cert-hero-compact{min-height:0;padding-block:52px 64px}
+  .cert-hero-compact p{font-size:14px;line-height:1.9}
+  .cert-hero-compact .mini-process{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:28px 32px;margin-top:48px;padding-top:28px}
+  .cert-hero-compact .mini-process>span{font-size:16px;white-space:normal;padding-block:8px 20px}
+  .cert-hero-compact .mini-process b{font-size:58px;margin-bottom:18px}
+  .cert-hero-compact .mini-process>span:not(:last-child):after{right:-22px;top:24px;font-size:24px}
+  .cert-hero-compact .mini-process>span:nth-child(2):after{display:none}
+}
