@@ -213,3 +213,11 @@ dialog{border-radius:16px;border-top:5px solid var(--orange)}
 #footer .footer-language a{font-size:10px;color:#ffffffb8}
 #footer .footer-language a[aria-current="page"]{color:var(--orange);text-decoration:underline;text-underline-offset:4px}
 @media(max-width:600px){html[lang="en"] .title-row h1{white-space:normal;min-width:0}}
+
+/* Compact chartering page uses the homepage four-step layout. */
+.cert-hero-compact{display:block;padding-block:52px 64px}
+.cert-hero-compact>div{max-width:1000px}
+.cert-hero-compact h1{margin:0;font-size:clamp(30px,3.4vw,44px);line-height:1.45}
+.cert-hero-compact p{max-width:840px}
+.cert-hero-compact .mini-process{max-width:840px;margin-top:36px;border-color:var(--line)}
+@media(max-width:600px){.cert-hero-compact{padding-block:44px 60px}}

@@ -17,10 +17,10 @@ jobs:
 
           base = "https://global-lean-club.vercel.app/"
           expected = {
-              "index.html": "5ccfbb8d0b5beb6da25067ada5416fdb0334225d2111c7680641fd703cd83d83",
-              "app.js": "a019044bb2f4305b2aee585c0f495f39dce83545b3609eeddc4c6754f82db6ed",
-              "content.js": "02329c38b642ecb1a49b9907d9a8f16c841899abda20d648565e945413995e65",
-              "styles.css": "1a38ab94f69e55b144e98ad062bad8cce1a9696f068eb4011d39c5217f70dc19",
+              "index.html": "323d50c5cabfeba7906dcf620330aa7b91459c207d9e7786474f728dcc473cb1",
+              "app.js": "a73324e4e6a0fa0a6e800f9c4ed07ab74e2d9d7632cb3efee097149d203ff38a",
+              "content.js": "1e4807c1e006a2d77db4b30fbdf89f53f5de9017d79a936ad30d1286e997e174",
+              "styles.css": "113599dd06ca9309f367a28965f595a4fb9a4f4de988471b55c0d3273919a4da",
               "assets/campus.png": "c0725175f855bbe8200ca8ef714abb645e04209900a7972fea218ee2abdd1781",
               "assets/workshop.png": "222b7271b56484e80c7abe49143e437819a5625a16b5b3b30d3d960de3591902",
               "assets/community.png": "a767946d1d24250d70cbb67dc5349c11b00afe47cf046ce862224b326a05bdd4",

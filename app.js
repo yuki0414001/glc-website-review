@@ -1,8 +1,8 @@
-import {getSiteContent,languageForUrl,languageHref} from './content.js?v=20261028-bilingual-2';
+import {getSiteContent,languageForUrl,languageHref} from './content.js?v=20261028-cert-compact';
 
 const language = languageForUrl(location.href);
 const english = language === 'en';
-const {copy,ui,nav,auxiliary,chapters,highlights,programs,conditions,supports,process,reviewNotes,pendingAssets,fallbackNotes} = getSiteContent(language);
+const {copy,ui,nav,auxiliary,chapters,highlights,programs,reviewNotes,pendingAssets,fallbackNotes} = getSiteContent(language);
 const $ = s => document.querySelector(s);
 const esc = s => String(s ?? '').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const lines = text => esc(text).replace(/\n/g,'<br>');
@@ -65,8 +65,7 @@ function programDetail(id) {
  $('#program-detail').scrollIntoView({behavior:motion(),block:'nearest'});
 }
 function certification() {
- const formTitle = english?copy.applicationTitle:copy.applicationTitle.replace('全球薄肌俱乐部','全球薄肌俱乐部\n');
- return `<section class="cert-hero page-wrap"><div><div class="eyebrow">Chapter Chartering</div><h1>${esc(copy.chapterChartering)}</h1><h2>${esc(copy.certificationTitle)}</h2><p>${esc(copy.certificationIntro)}</p><a href="#application" data-scroll="application" class="button orange">${esc(copy.applyNow)} <span>↓</span></a></div><div class="cert-visual">${photo('workshop',ui.imageWorkshop,'',true)}<div class="cert-seal"><span>Global Lean Club</span><b>GLC</b><span>Chapter Chartering ✳</span></div></div></section><section class="section page-wrap">${sectionTitle('01','Before You Apply',ui.beforeApply,ui.beforeApplyIntro)}<div class="conditions-grid">${conditions.map((x,i)=>`<article><span class="condition-index">0${i+1}</span><h3>${esc(x[0])}</h3><p>${esc(x[1])}</p></article>`).join('')}</div><p class="section-note">${esc(ui.locationNote)}</p></section><section class="section support-section"><div class="page-wrap">${sectionTitle('02','Chapter Support',ui.chapterSupport,ui.supportIntro)}<div class="support-grid">${supports.map(x=>`<article><span class="support-icon">${x[3]}</span><h3>${esc(x[0])}</h3><span class="support-en" aria-hidden="${english}">${secondary(x[1])}</span><p>${esc(x[2])}</p></article>`).join('')}</div><p class="section-note">${esc(ui.supportNote)}</p></div></section><section class="section page-wrap">${sectionTitle('03','How It Works',ui.certificationProcess)}<ol class="process-list">${process.map((x,i)=>`<li><span>0${i+1}</span><h3>${esc(x)}</h3></li>`).join('')}</ol><p class="section-note">${esc(ui.processNote)}</p></section><section class="application-section" id="application"><div class="page-wrap"><div class="application-heading"><div class="eyebrow">04</div><h2>${lines(formTitle)}</h2></div><div class="application-entry"><a class="button orange" href="${ui.applicationUrl}" target="_blank" rel="noopener noreferrer">${esc(ui.openApplication)} ${arrow}</a></div></div></section>`;
+ return `<section class="cert-hero cert-hero-compact page-wrap"><div><h1>${esc(copy.certificationTitle)}</h1><p>${esc(copy.certificationIntro)}</p><a class="button orange" href="${ui.applicationUrl}" target="_blank" rel="noopener noreferrer">${esc(copy.applyNow)} ${arrow}</a><div class="mini-process">${[copy.apply,copy.review,copy.charter,copy.launch].map((x,i)=>`<span><b>0${i+1}</b>${esc(x)}</span>`).join('')}</div></div></section>`;
 }
 function auxiliaryPage(id) {
  const item=auxiliary.find(x=>x[0]===id);

@@ -140,15 +140,6 @@ const content = {
       "membershipNote": "官网不统一承接普通成员加入申请。",
       "exploreDetails": "点击探索",
       "closeProgram": "收起活动详情",
-      "beforeApply": "申请前确认",
-      "beforeApplyIntro": "申请GLC高校分部认证前，请确认符合以下基本条件：",
-      "locationNote": "中国内地高校与境外高校均可申请，官网申请表将根据高校所在地显示对应的信息及证明要求。",
-      "chapterSupport": "认证后支持",
-      "supportIntro": "通过认证的GLC高校分部，可获得全球薄肌俱乐部提供的品牌与运营支持。",
-      "supportNote": "具体资源支持以实际活动需求、相关审批及适用规定为准。",
-      "certificationProcess": "认证流程",
-      "processNote": "如资料需要补充，秘书处将通过申请人所填联系方式进行沟通；审核未通过的，将告知原因及复核渠道。",
-      "openApplication": "填写申请表",
       "contactEmail": "contact@globalleanclub.org",
       "applicationUrl": "https://docs.google.com/forms/d/e/1FAIpQLSeqbcljH0reOSdT-tTYvbCyLfe1m6FFYjMowDiQqnElm0oX_A/viewform",
       "contactPurpose": "申请咨询、资料更正或删除：",
@@ -430,57 +421,6 @@ const content = {
         ]
       }
     ],
-    "conditions": [
-      [
-        "已获得学校正式认可",
-        "申请主体须为已获所属学校正式认可，且认可状态仍在有效期内的俱乐部／社团。"
-      ],
-      [
-        "由现任负责人本人申请",
-        "申请须由该俱乐部／社团现任负责人本人填写并提交，不接受代为申请。"
-      ],
-      [
-        "能够提供可核实证明",
-        "申请时须提供学校正式认可证明，以及负责人当前在校状态等必要核验材料。"
-      ],
-      [
-        "具备基本团队基础",
-        "初始成员原则上不少于10人，并至少设置1名负责人和1名协助运营人员。"
-      ]
-    ],
-    "supports": [
-      [
-        "品牌支持",
-        "Brand Support",
-        "GLC官方电子认证证书、品牌标识及宣传素材。",
-        "✳"
-      ],
-      [
-        "物资支持",
-        "Material Support",
-        "运动周边、活动礼品及相关物资。",
-        "↗"
-      ],
-      [
-        "活动支持",
-        "Program Support",
-        "全球主题活动、跨校交流及活动策划支持，并可根据实际需求申请活动经费。",
-        "↔"
-      ],
-      [
-        "传播支持",
-        "Media Support",
-        "优秀分部活动及成员故事有机会获得GLC官方平台宣传推广。",
-        "◎"
-      ]
-    ],
-    "process": [
-      "填写信息并提交材料",
-      "秘书处核实",
-      "总部审核",
-      "通过后领取电子认证及品牌素材",
-      "建立 / 完善社群并开展首场活动"
-    ],
     "reviewNotes": {
       "home": {
         "pages": "Word · 首页",
@@ -535,16 +475,12 @@ const content = {
       "certification": {
         "pages": "Word · 高校分部认证",
         "sections": [
-          "认证首屏",
-          "申请前确认",
-          "认证后支持",
-          "认证流程",
-          "Google表单申请入口"
+          "认证说明与申请入口",
+          "四步认证流程"
         ],
         "notes": [
-          "首屏采用用户最新确认的中英文文案。",
-          "文档未覆盖的原有认证条件、支持和流程予以保留，并忠实翻译。",
-          "谷歌表单入口与联系邮箱保持。"
+          "仅保留用户指定的标题、说明、申请按钮和首页样式的四步流程。",
+          "申请按钮继续跳转既有谷歌表单。"
         ]
       }
     },
@@ -711,15 +647,6 @@ const content = {
       "membershipNote": "The website does not centrally handle individual membership applications.",
       "exploreDetails": "Explore details",
       "closeProgram": "Close activity details",
-      "beforeApply": "Before You Apply",
-      "beforeApplyIntro": "Before applying for GLC campus chapter chartering, please confirm that you meet these basic conditions:",
-      "locationNote": "Campus student clubs in mainland China and overseas may apply. The application form provides information and supporting-document requirements based on the university’s location.",
-      "chapterSupport": "Chapter Support",
-      "supportIntro": "Chartered GLC Campus Chapters can receive brand and operational support from Global Lean Club.",
-      "supportNote": "Resource support is subject to actual event needs, relevant approvals, and applicable requirements.",
-      "certificationProcess": "Chartering Process",
-      "processNote": "If additional information is required, the Secretariat will contact the applicant using the details provided. If an application is not approved, the reason and review channel will be communicated.",
-      "openApplication": "Open Application Form",
       "contactEmail": "contact@globalleanclub.org",
       "applicationUrl": "https://docs.google.com/forms/d/e/1FAIpQLSeqbcljH0reOSdT-tTYvbCyLfe1m6FFYjMowDiQqnElm0oX_A/viewform",
       "contactPurpose": "Application inquiries, corrections, or deletion of submitted information:",
@@ -1001,57 +928,6 @@ const content = {
         ]
       }
     ],
-    "conditions": [
-      [
-        "Officially recognized by the university",
-        "The applicant must be a campus student club that is officially recognized by its university, with recognition currently valid."
-      ],
-      [
-        "Submitted by the current club leader",
-        "The application must be completed and submitted by the club’s current leader in person. Applications submitted on someone else’s behalf are not accepted."
-      ],
-      [
-        "Verifiable supporting documents",
-        "Applicants must provide proof of official university recognition and the leader’s current enrollment, together with other necessary verification materials."
-      ],
-      [
-        "A basic team in place",
-        "The initial membership should generally include at least 10 people, with at least one leader and one person assisting with operations."
-      ]
-    ],
-    "supports": [
-      [
-        "Brand Support",
-        "Brand Support",
-        "Official GLC electronic certificate, brand identity assets, and promotional materials.",
-        "✳"
-      ],
-      [
-        "Material Support",
-        "Material Support",
-        "Sports merchandise, event gifts, and related materials.",
-        "↗"
-      ],
-      [
-        "Event Support",
-        "Event Support",
-        "Global themed events, cross-campus exchanges, and event planning support. Chapters may also apply for event funding based on actual needs.",
-        "↔"
-      ],
-      [
-        "Media Support",
-        "Media Support",
-        "Outstanding chapter activities and member stories may be featured on GLC’s official platforms.",
-        "◎"
-      ]
-    ],
-    "process": [
-      "Submit information and supporting documents",
-      "Secretariat verification",
-      "Headquarters review",
-      "Receive an electronic certificate and brand assets upon approval",
-      "Build or enhance your community and run the first event"
-    ],
     "reviewNotes": {
       "home": {
         "pages": "Word · Home",
@@ -1106,16 +982,12 @@ const content = {
       "certification": {
         "pages": "Word · Chapter Chartering",
         "sections": [
-          "Chartering hero",
-          "Before You Apply",
-          "Chapter Support",
-          "Chartering Process",
-          "Google Form entry"
+          "Chartering introduction and application entry",
+          "Four-step chartering process"
         ],
         "notes": [
-          "The hero uses the latest Chinese and English copy confirmed by the user.",
-          "Existing conditions, support, and workflow omitted from the new document are retained and faithfully translated.",
-          "The existing Google Form and contact email are retained."
+          "Only the specified heading, introduction, application button, and homepage-style four-step process are retained.",
+          "The application button opens the existing Google Form."
         ]
       }
     },
