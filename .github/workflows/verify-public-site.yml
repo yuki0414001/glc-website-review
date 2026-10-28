@@ -17,10 +17,10 @@ jobs:
 
           base = "https://global-lean-club.vercel.app/"
           expected = {
-              "index.html": "ade455ca1837cba6a927407072b689e83b666f2afe7e93ea24e895ca308c77dd",
-              "app.js": "1247ac3e2f3947758cde713a2ccf9a164fe1680df8954d1cc8629b0ace03f697",
-              "content.js": "2fe3968d5dff4f48d55b9e3be0ee9aef66ecca7317c9f1c25324449562f3b2a0",
-              "styles.css": "6fba667fbff9f1cf6cef4a1f2b7878139407646e8c133a66848f19cab0ab0063",
+              "index.html": "5ccfbb8d0b5beb6da25067ada5416fdb0334225d2111c7680641fd703cd83d83",
+              "app.js": "a019044bb2f4305b2aee585c0f495f39dce83545b3609eeddc4c6754f82db6ed",
+              "content.js": "02329c38b642ecb1a49b9907d9a8f16c841899abda20d648565e945413995e65",
+              "styles.css": "1a38ab94f69e55b144e98ad062bad8cce1a9696f068eb4011d39c5217f70dc19",
               "assets/campus.png": "c0725175f855bbe8200ca8ef714abb645e04209900a7972fea218ee2abdd1781",
               "assets/workshop.png": "222b7271b56484e80c7abe49143e437819a5625a16b5b3b30d3d960de3591902",
               "assets/community.png": "a767946d1d24250d70cbb67dc5349c11b00afe47cf046ce862224b326a05bdd4",
@@ -38,6 +38,18 @@ jobs:
               except Exception:
                   pass
               print(f"{path}: HTTP={status} SHA256={'MATCH' if match else 'FAIL'}")
+              passed = passed and match
+          for language in ("zh", "en"):
+              status, match = "ERROR", False
+              try:
+                  with urllib.request.urlopen(base + "?lang=" + language, timeout=25) as response:
+                      status = response.status
+                      match = status == 200 and hashlib.sha256(response.read()).hexdigest() == expected["index.html"]
+              except urllib.error.HTTPError as error:
+                  status = error.code
+              except Exception:
+                  pass
+              print(f"Language URL {language}: HTTP={status} SHA256={'MATCH' if match else 'FAIL'}")
               passed = passed and match
           print(f"Overall: {'PASS' if passed else 'FAIL'}")
           sys.exit(0 if passed else 1)
